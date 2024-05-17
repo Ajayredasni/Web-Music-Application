@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Email ID Already Exist.</h2><br/>
+	<form action="register" method="post">
+		<label>User Name : </label>
+		<input type="text" name="username" required="required" placeholder="Username"/><br/><br/>
+		<label>Email ID : </label>
+		<input type="email" name="email" required="required" placeholder="Emil ID"/><br/><br/>
+		<label>Password : </label>
+		<input type="password" name="password" required="required" placeholder="Password"/><br/><br/>
+		<label>Gender : </label>
+		<input type="radio" name="gender" value="male"/>M
+		<input type="radio" name="gender" value="female"/>F
+		<input type="radio" name="gender" value="Other"/>O<br/><br/>
+		<label>Role : </label>
+		<input type="radio" name="role" value="Admin"/>Admin
+		<input type="radio" name="role" value="Customer"/>Customer<br/><br/>
+		<label>Address : </label>
+		<textarea name="address"></textarea><br/><br/>
+		<input type="submit" value="REGISTER"/>
+	</form>
+</body>
+</html>

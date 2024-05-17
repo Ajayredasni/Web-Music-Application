@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+  </head>
+  <body>
+    <main>
+      <section class="section-registation">
+        <div class="register-container">
+          <div class="register-form-box">
+            <div>
+              <h1 class="heading-primary">
+                Welcome To<img
+                  src="./images/musichub-logo.png"
+                  alt="Music-Hub Logo"
+                />
+              </h1>
+              <h2 class="heading-secondary">Please continue to Registation</h2>
+            </div>
+            <form class="register-form" action="register" method="post">
+              <div>
+                <label>User Name : </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="username"
+                  required="required"
+                  placeholder="Username"
+                />
+              </div>
+
+              <div>
+                <label>Email ID : </label>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  required="required"
+                  placeholder="Emil ID"
+                />
+              </div>
+
+              <div>
+                <label>Password : </label>
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  required="required"
+                  placeholder="Password"
+                />
+              </div>
+
+              <div>
+                <label>Role : </label>
+                <div class="radio-container">
+                  <div class="radio">
+                    <input
+                      class="radio-smb"
+                      type="radio"
+                      name="role"
+                      value="Admin"
+                    /><label> Admin</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      class="radio-smb"
+                      type="radio"
+                      name="role"
+                      value="Customer"
+                    /><label>Customer</label>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label>Gender : </label>
+                <div class="radio-container">
+                  <div class="radio">
+                    <input
+                      class="radio-smb"
+                      type="radio"
+                      name="gender"
+                      value="male"
+                    /><label>Male</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      class="radio-smb"
+                      type="radio"
+                      name="gender"
+                      value="female"
+                    /><label>Famel</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      class="radio-smb"
+                      type="radio"
+                      name="gender"
+                      value="Other"
+                    /><label>Other</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label>Address : </label>
+                <textarea name="address"></textarea>
+              </div>
+              <button class="btn btn--full btn-register">REGISTER</button>
+            </form>
+          </div>
+
+          <div
+            class="register-img-box"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

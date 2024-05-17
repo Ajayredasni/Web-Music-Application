@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Admin View PlayList Successfully</h1>
+	<table  border="2">
+		<thead>
+		<tr>
+			<td>id</td>
+			<td>playListName</td>
+			<td>songsEntity</td>
+		</tr>
+		</thead>
+		<tr th:each="playList:${playListEntities}">
+			<td th:text="${playList.id}"></td>
+			<td th:text="${playList.playListName}"></td>
+			<td>
+				<ul>
+				   <li th:each="s: ${playList.songsEntity}">
+				   <lable th:text="${s.songName}"></lable>
+					  <audio controls>
+					     <source th:src=${s.songLink} type="audio/mpeg">
+				       </audio>
+				    </li>
+				</ul>
+			</td>
+			
+		</tr>
+	</table>
+</body>
+</html>
